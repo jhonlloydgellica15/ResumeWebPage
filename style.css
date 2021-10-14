@@ -13,6 +13,7 @@ body {
 }
 html {
   font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -20,17 +21,92 @@ html {
   background: #e6e6e6;
   justify-content: center;
   padding: 2rem;
+  min-width: 2000px;
 }
 #left--section {
   content: "hello";
   background: var(--color-primary);
   width: 15%;
-  height: 100vh;
+  height: auto;
+  color: white;
+  font-size: 1rem;
 }
+.image {
+  text-align: center;
+}
+.image img {
+  width: 70%;
+  height: 200px;
+  margin-top: 5rem;
+}
+
 #right--section {
-  content: "hello";
   background: var(--color-white);
   width: 35%;
-  height: 100vh;
+  height: auto;
   border: 0.5px solid black;
+}
+.h2LeftSection {
+  color: white;
+  font-size: 2rem;
+}
+
+.h2LeftSection::after {
+  display: block;
+  content: "";
+  border-bottom: 1px solid var(--color-white);
+  width: 100px;
+}
+.body {
+  margin-top: 6rem;
+}
+.about,
+.contact,
+.reference {
+  padding: 0 4rem;
+}
+.about,
+.contact,
+.reference,
+p {
+  margin: 2px 0;
+}
+.reference {
+  margin-top: 15rem;
+}
+.fas {
+  font-size: 1.5rem;
+}
+.phone,
+.message,
+.globe {
+  display: flex;
+}
+.phone i {
+  margin-top: 0.5rem;
+}
+.message i {
+  margin-top: 1.3rem;
+}
+.globe i {
+  margin-top: 1rem;
+}
+.phone,
+.message,
+.globe,
+p {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+.name,
+.position {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.person2 {
+  margin-top: 10rem;
+}
+.person1 p,
+.person2 p {
+  margin: 0;
 }
