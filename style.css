@@ -1,0 +1,36 @@
+:root {
+  --color-primary: #2b3a51;
+  --color-white: white;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  background: #e6e6e6;
+  justify-content: center;
+  padding: 2rem;
+}
+#left--section {
+  content: "hello";
+  background: var(--color-primary);
+  width: 15%;
+  height: 100vh;
+}
+#right--section {
+  content: "hello";
+  background: var(--color-white);
+  width: 35%;
+  height: 100vh;
+  border: 0.5px solid black;
+}
